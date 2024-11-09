@@ -21,7 +21,7 @@ The following is an example docker-compose:
 
 ```yaml
   qbittorrent-port-forward-gluetun-server:
-    image: mjmeli/qbittorrent-port-forward-gluetun-server
+    image: commanderturt/qbittorrent-port-forward-gluetun-server
     container_name: qbittorrent-port-forward-gluetun-server
     restart: unless-stopped
     environment:
