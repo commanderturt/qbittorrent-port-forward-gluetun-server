@@ -6,7 +6,7 @@ VOLUME [ "/config" ]
 
 RUN apk --no-cache add jq curl
 
-RUN echo "*/10 * * * * /bin/sh /usr/src/app/main.sh" | crontab -
+RUN echo "*/1 * * * * /bin/sh /usr/src/app/main.sh" | crontab -
 
 COPY *.sh ./
 
