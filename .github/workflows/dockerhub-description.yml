@@ -18,8 +18,8 @@ jobs:
     - name: Docker Hub Description
       uses: peter-evans/dockerhub-description@v2
       with:
-        username: mjmeli
+        username: boons8858
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-        repository: mjmeli/${{ github.event.repository.name }}
+        repository: boons8858/${{ github.event.repository.name }}
         short-description: ${{ github.event.repository.description }}
         readme-filepath: ./README.md
